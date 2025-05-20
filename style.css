@@ -1,0 +1,15 @@
+.introducao{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+div.introducao > div{
+    min-width: 200px;
+    margin: 10px;
+    padding: 20px;
+    background-color: gray;
+}
+h2{
+  font-size: 200%;
+}
