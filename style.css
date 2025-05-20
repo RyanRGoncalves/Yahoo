@@ -1,15 +1,21 @@
 .introducao{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 100%;
 }
 div.introducao > div{
-    min-width: 200px;
+    max-width: 400px;
     margin: 10px;
     padding: 20px;
     background-color: gray;
 }
 h2{
-  font-size: 200%;
+    font-size: 200%;
+    text-align: center;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
