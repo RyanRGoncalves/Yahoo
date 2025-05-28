@@ -3,6 +3,9 @@ h1{
     font-size: 200%;
     text-align: center;
 }
+h2, h3{
+    text-align: center;
+}
 .center{
     display: block;
     margin-left: auto;
