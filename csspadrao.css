@@ -19,6 +19,8 @@ body{
 p{
     font-size: 24px;
     text-align: justify;
+    margin-left: 24px;
+    margin-right: 30px;
 }
 div.content{
     width: 80%; 
