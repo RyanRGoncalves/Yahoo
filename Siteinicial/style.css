@@ -4,7 +4,7 @@
     justify-content: space-evenly;
     width: 100%;
     flex-wrap: wrap;
-    align-items: baseline;
+    /*align-items: baseline;*/
 }
 div.introducao > div{
     max-width: 450px;
@@ -20,6 +20,8 @@ button.pesquisar{
     width: 175px;
     height: 50px;
     font-size: 24px;
+    position: relative;
+    left: 30%;
 }
 p{
     margin-left: 0;

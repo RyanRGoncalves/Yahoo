@@ -35,3 +35,18 @@ div.content{
     border-width: 3px;
     border-color: white;
 }
+@keyframes moveleft {
+    from {left: 40%} 
+    to {left: 30%}
+}
+img.moveleft{
+    position: relative;
+    left: 30%;
+    animation-name: moveleft;
+    animation-duration: 3s;
+    z-index: 1;
+}
+p.basicdetails{ /*I don't know what i'm doing please help*/
+    position: relative;
+    left: 2%;
+}
