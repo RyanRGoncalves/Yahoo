@@ -18,6 +18,7 @@ img.whiteborder{
 }
 body{
     background-color: rgb(127, 31, 252);
+    margin-top: 0;
 }
 p{
     font-size: 24px;
@@ -29,4 +30,23 @@ p{
 div.content{
     width: 80%; 
     background-color: rgb(150, 150, 150); 
+    padding-top: 0;
+    border: solid;
+    border-width: 3px;
+    border-color: white;
+}
+@keyframes moveleft {
+    from {left: 40%} 
+    to {left: 30%}
+}
+img.moveleft{
+    position: relative;
+    left: 30%;
+    animation-name: moveleft;
+    animation-duration: 3s;
+    z-index: 1;
+}
+p.basicdetails{ /*I don't know what i'm doing please help*/
+    position: relative;
+    left: 2%;
 }
