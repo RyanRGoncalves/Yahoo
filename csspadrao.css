@@ -37,34 +37,37 @@ div.content{
 }
 
 /* Animação imagem - intrudução basica */
-@keyframes moveleft {
-    from {left: 50%} 
-    to {left: 0}
-}
-@keyframes moveright {
-    from {right: 50%}
-    to {right: 0}
-}
-div.ibnt{ /* "Introdução Basica No Topo" - IBNP */
-    display: flex;
-    justify-content: center;
-    margin-left: 20px;
-    margin-right: 0;
-}
-p.ibnt{
-    font-size: 20px;
-    text-align: left;
-}
-.moveleft{ /* Movimento do meio para a esquerda */
-    position: relative;
-    left: 0;
-    animation-name: moveleft;
-    animation-duration: 3s;
-    z-index: 1;
-}
-.moveright{ /* Movimento do meio para a direita */
-    position: relative;
-    right: 0;
-    animation-name: moveright;
-    animation-duration: 3s;
+@media screen and (min-width: 641px) { /* Apenas se maior que 641px */
+    @keyframes moveleft {
+        from {left: 50%} 
+        to {left: 0}
+    }
+    @keyframes moveright {
+        from {right: 50%}
+        to {right: 0}
+    }
+    div.ibnt{ /* "Introdução Basica No Topo" - IBNP */
+        display: flex;
+        justify-content: center;
+        margin-left: 20px;
+        margin-right: 0;
+        flex-wrap: wrap;
+    }
+    p.ibnt{
+        font-size: 20px;
+        text-align: left;
+    }
+    .moveleft{ /* Movimento do meio para a esquerda */
+        position: relative;
+        left: 0;
+        animation-name: moveleft;
+        animation-duration: 3s;
+        z-index: 1;
+    }
+    .moveright{ /* Movimento do meio para a direita */
+        position: relative;
+        right: 0;
+        animation-name: moveright;
+        animation-duration: 3s;
+    }
 }
