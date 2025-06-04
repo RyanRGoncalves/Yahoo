@@ -35,18 +35,36 @@ div.content{
     border-width: 3px;
     border-color: white;
 }
+
+/* Animação imagem - intrudução basica */
 @keyframes moveleft {
-    from {left: 40%} 
-    to {left: 30%}
+    from {left: 50%} 
+    to {left: 0}
 }
-img.moveleft{
+@keyframes moveright {
+    from {right: 50%}
+    to {right: 0}
+}
+div.ibnt{ /* "Introdução Basica No Topo" - IBNP */
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 0;
+}
+p.ibnt{
+    font-size: 20px;
+    text-align: left;
+}
+.moveleft{ /* Movimento do meio para a esquerda */
     position: relative;
-    left: 30%;
+    left: 0;
     animation-name: moveleft;
     animation-duration: 3s;
     z-index: 1;
 }
-p.basicdetails{ /*I don't know what i'm doing please help*/
+.moveright{ /* Movimento do meio para a direita */
     position: relative;
-    left: 2%;
+    right: 0;
+    animation-name: moveright;
+    animation-duration: 3s;
 }
